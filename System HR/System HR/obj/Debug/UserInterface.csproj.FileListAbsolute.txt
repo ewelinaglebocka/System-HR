@@ -1,0 +1,10 @@
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\bin\Debug\System HR.exe.config
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\bin\Debug\System HR.exe
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\bin\Debug\System HR.pdb
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\UserInterface.csproj.AssemblyReference.cache
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\UserInterface.csproj.SuggestedBindingRedirects.cache
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\System_HR.Properties.Resources.resources
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\UserInterface.csproj.GenerateResource.cache
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\UserInterface.csproj.CoreCompileInputs.cache
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\System HR.exe
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\System HR.pdb

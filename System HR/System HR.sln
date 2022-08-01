@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System HR", "System HR\System HR.csproj", "{F2396D2E-A1DD-4B0A-BB3C-CACE3741E37C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface", "System HR\UserInterface.csproj", "{F2396D2E-A1DD-4B0A-BB3C-CACE3741E37C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{EBBB92A0-ADDE-4436-ADB6-74353B5F2E70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F2396D2E-A1DD-4B0A-BB3C-CACE3741E37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2396D2E-A1DD-4B0A-BB3C-CACE3741E37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2396D2E-A1DD-4B0A-BB3C-CACE3741E37C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBBB92A0-ADDE-4436-ADB6-74353B5F2E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBBB92A0-ADDE-4436-ADB6-74353B5F2E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBBB92A0-ADDE-4436-ADB6-74353B5F2E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBBB92A0-ADDE-4436-ADB6-74353B5F2E70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
