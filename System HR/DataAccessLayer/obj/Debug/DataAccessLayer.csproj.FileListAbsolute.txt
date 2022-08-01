@@ -1,0 +1,6 @@
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
