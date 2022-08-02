@@ -12,3 +12,19 @@ C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\
 C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.exe
 C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.pdb
 C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.MainForm.resources
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\UserInterface.csproj.AssemblyReference.cache
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\UserInterface.csproj.SuggestedBindingRedirects.cache
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.MainForm.resources
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Properties.Resources.resources
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\UserInterface.csproj.GenerateResource.cache
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\UserInterface.csproj.CoreCompileInputs.cache
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\SystemHR.exe
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\SystemHR.pdb
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\bin\Debug\SystemHR.exe.config
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\bin\Debug\SystemHR.exe
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\bin\Debug\SystemHR.pdb
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\bin\Debug\DataAccessLayer.dll
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\bin\Debug\DataAccessLayer.pdb
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\UserInterface.csproj.CopyComplete
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Contracts.ContractsForm.resources
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.EmployeesForm.resources

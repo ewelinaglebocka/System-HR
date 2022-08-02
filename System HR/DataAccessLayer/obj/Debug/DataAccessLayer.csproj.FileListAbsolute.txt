@@ -4,3 +4,9 @@ C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\DataAccessLaye
 C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
