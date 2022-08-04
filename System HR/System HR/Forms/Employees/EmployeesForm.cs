@@ -115,14 +115,20 @@ namespace SystemHR.UserInterface.Forms.Employees
             };
             return MappingHelper.MapEmpoyeeModelToEmployeeViewModel(fakeEmployeesModel);
         }
-
-    }
-    #endregion
+        #endregion
         #region Events
-    private void EmployeesForm_FormClosed(object sender, FormClosedEventArgs e)
-    {
-        _instance = null;
+        private void EmployeesForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _instance = null;
+        }
+
+        #endregion
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            EmployeeAddForm frm = new EmployeeAddForm();
+            frm.ShowDialog();
+        }
     }
 
-    #endregion
 }
