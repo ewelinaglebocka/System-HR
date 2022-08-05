@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeAddForm));
             this.lblEmployee = new System.Windows.Forms.Label();
             this.gbGeneral = new System.Windows.Forms.GroupBox();
             this.txtPesel = new System.Windows.Forms.TextBox();
@@ -35,6 +37,7 @@
             this.dtpDateBirth = new System.Windows.Forms.DateTimePicker();
             this.lblDateBirth = new System.Windows.Forms.Label();
             this.cbGender = new System.Windows.Forms.ComboBox();
+            this.bsGender = new System.Windows.Forms.BindingSource(this.components);
             this.lblGender = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
@@ -62,11 +65,18 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.pbEmployee = new System.Windows.Forms.PictureBox();
+            this.epFirstName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epLastName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epPESEL = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsGender)).BeginInit();
             this.gbContact.SuspendLayout();
             this.gbIdentityCard.SuspendLayout();
             this.gbPassport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epFirstName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epLastName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epPESEL)).BeginInit();
             this.SuspendLayout();
             // 
             // lblEmployee
@@ -106,6 +116,8 @@
             this.txtPesel.Name = "txtPesel";
             this.txtPesel.Size = new System.Drawing.Size(165, 25);
             this.txtPesel.TabIndex = 9;
+            this.txtPesel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPesel_KeyPress);
+            this.txtPesel.Validated += new System.EventHandler(this.txtPesel_Validated);
             // 
             // lblPesel
             // 
@@ -126,6 +138,7 @@
             this.dtpDateBirth.Name = "dtpDateBirth";
             this.dtpDateBirth.Size = new System.Drawing.Size(165, 27);
             this.dtpDateBirth.TabIndex = 7;
+            this.dtpDateBirth.ValueChanged += new System.EventHandler(this.dtp_ValueChanged);
             // 
             // lblDateBirth
             // 
@@ -139,12 +152,19 @@
             // 
             // cbGender
             // 
+            this.cbGender.DataSource = this.bsGender;
+            this.cbGender.DisplayMember = "Value";
             this.cbGender.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbGender.FormattingEnabled = true;
             this.cbGender.Location = new System.Drawing.Point(187, 110);
             this.cbGender.Name = "cbGender";
             this.cbGender.Size = new System.Drawing.Size(165, 25);
             this.cbGender.TabIndex = 5;
+            this.cbGender.ValueMember = "Id";
+            // 
+            // bsGender
+            // 
+            this.bsGender.DataSource = typeof(SystemHR.DataAccessLayer.Models.Dictionaries.GenderModel);
             // 
             // lblGender
             // 
@@ -163,6 +183,7 @@
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(165, 25);
             this.txtFirstName.TabIndex = 3;
+            this.txtFirstName.TextChanged += new System.EventHandler(this.txtFirstName_TextChanged);
             // 
             // txtLastName
             // 
@@ -171,6 +192,7 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(165, 25);
             this.txtLastName.TabIndex = 2;
+            this.txtLastName.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
             // 
             // lblFirstName
             // 
@@ -267,6 +289,7 @@
             this.dtpExpirationDateIdentityCard.Name = "dtpExpirationDateIdentityCard";
             this.dtpExpirationDateIdentityCard.Size = new System.Drawing.Size(165, 27);
             this.dtpExpirationDateIdentityCard.TabIndex = 5;
+            this.dtpExpirationDateIdentityCard.ValueChanged += new System.EventHandler(this.dtp_ValueChanged);
             // 
             // lblExpirationDateIdentityCard
             // 
@@ -287,6 +310,7 @@
             this.dtpIssueDateIdentityCard.Name = "dtpIssueDateIdentityCard";
             this.dtpIssueDateIdentityCard.Size = new System.Drawing.Size(165, 27);
             this.dtpIssueDateIdentityCard.TabIndex = 3;
+            this.dtpIssueDateIdentityCard.ValueChanged += new System.EventHandler(this.dtp_ValueChanged);
             // 
             // lblIssueDateIdentityCard
             // 
@@ -341,6 +365,7 @@
             this.dtpExpirationDatePassport.Name = "dtpExpirationDatePassport";
             this.dtpExpirationDatePassport.Size = new System.Drawing.Size(165, 27);
             this.dtpExpirationDatePassport.TabIndex = 5;
+            this.dtpExpirationDatePassport.ValueChanged += new System.EventHandler(this.dtp_ValueChanged);
             // 
             // lblExpirationDatePassport
             // 
@@ -361,6 +386,7 @@
             this.dtpIssueDatePassport.Name = "dtpIssueDatePassport";
             this.dtpIssueDatePassport.Size = new System.Drawing.Size(165, 27);
             this.dtpIssueDatePassport.TabIndex = 3;
+            this.dtpIssueDatePassport.ValueChanged += new System.EventHandler(this.dtp_ValueChanged);
             // 
             // lblIssueDatePassport
             // 
@@ -430,6 +456,22 @@
             this.pbEmployee.TabIndex = 2;
             this.pbEmployee.TabStop = false;
             // 
+            // epFirstName
+            // 
+            this.epFirstName.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.epFirstName.ContainerControl = this;
+            // 
+            // epLastName
+            // 
+            this.epLastName.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.epLastName.ContainerControl = this;
+            // 
+            // epPESEL
+            // 
+            this.epPESEL.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.epPESEL.ContainerControl = this;
+            this.epPESEL.Icon = ((System.Drawing.Icon)(resources.GetObject("epPESEL.Icon")));
+            // 
             // EmployeeAddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -449,6 +491,7 @@
             this.Text = "Dodaj pracownika";
             this.gbGeneral.ResumeLayout(false);
             this.gbGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsGender)).EndInit();
             this.gbContact.ResumeLayout(false);
             this.gbContact.PerformLayout();
             this.gbIdentityCard.ResumeLayout(false);
@@ -456,6 +499,9 @@
             this.gbPassport.ResumeLayout(false);
             this.gbPassport.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epFirstName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epLastName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epPESEL)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -497,5 +543,9 @@
         private System.Windows.Forms.Label lblPassportNumber;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.BindingSource bsGender;
+        private System.Windows.Forms.ErrorProvider epFirstName;
+        private System.Windows.Forms.ErrorProvider epLastName;
+        private System.Windows.Forms.ErrorProvider epPESEL;
     }
 }
