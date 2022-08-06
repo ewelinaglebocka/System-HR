@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\EmployeeEventArgs.cs" />
     <Compile Include="Extensions\ExtensionsMethods.cs" />
     <Compile Include="Forms\Contracts\ContractsForm.cs">
       <SubType>Form</SubType>
@@ -85,6 +86,7 @@
     </Compile>
     <Compile Include="Helpers\MappingHelper.cs" />
     <Compile Include="Helpers\ResourcesHelper.cs" />
+    <Compile Include="Helpers\ValidatorHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Contracts\ContractsForm.resx">
@@ -181,5 +183,6 @@
   <ItemGroup>
     <None Include="Resources\cancel_32.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -31,3 +31,8 @@ C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNO�
 C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.EmployeeAddForm.resources
 C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.Base.BaseForm.resources
 C:\Users\eglebocka\OneDrive - MARDOM PRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA\PRIV\Projekty\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.Base.BaseAddEditForm.resources
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Contracts.ContractsForm.resources
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.Base.BaseAddEditForm.resources
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.Base.BaseForm.resources
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.EmployeeAddForm.resources
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.EmployeesForm.resources
