@@ -86,9 +86,9 @@
             this.lblEmployee.Location = new System.Drawing.Point(33, 48);
             this.lblEmployee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmployee.Name = "lblEmployee";
-            this.lblEmployee.Size = new System.Drawing.Size(262, 37);
+            this.lblEmployee.Size = new System.Drawing.Size(263, 37);
             this.lblEmployee.TabIndex = 0;
-            this.lblEmployee.Text = "Dane identiyikacyjne";
+            this.lblEmployee.Text = "Dane identyfikacyjne";
             // 
             // gbGeneral
             // 
@@ -104,9 +104,9 @@
             this.gbGeneral.Controls.Add(this.lblLastName);
             this.gbGeneral.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gbGeneral.Location = new System.Drawing.Point(36, 137);
-            this.gbGeneral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbGeneral.Margin = new System.Windows.Forms.Padding(4);
             this.gbGeneral.Name = "gbGeneral";
-            this.gbGeneral.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbGeneral.Padding = new System.Windows.Forms.Padding(4);
             this.gbGeneral.Size = new System.Drawing.Size(516, 295);
             this.gbGeneral.TabIndex = 1;
             this.gbGeneral.TabStop = false;
@@ -116,7 +116,7 @@
             // 
             this.txtPesel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtPesel.Location = new System.Drawing.Point(249, 231);
-            this.txtPesel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPesel.Margin = new System.Windows.Forms.Padding(4);
             this.txtPesel.Name = "txtPesel";
             this.txtPesel.Size = new System.Drawing.Size(219, 29);
             this.txtPesel.TabIndex = 9;
@@ -140,7 +140,7 @@
             this.dtpDateBirth.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dtpDateBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpDateBirth.Location = new System.Drawing.Point(249, 182);
-            this.dtpDateBirth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpDateBirth.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDateBirth.Name = "dtpDateBirth";
             this.dtpDateBirth.Size = new System.Drawing.Size(219, 32);
             this.dtpDateBirth.TabIndex = 7;
@@ -164,7 +164,7 @@
             this.cbGender.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbGender.FormattingEnabled = true;
             this.cbGender.Location = new System.Drawing.Point(249, 135);
-            this.cbGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbGender.Margin = new System.Windows.Forms.Padding(4);
             this.cbGender.Name = "cbGender";
             this.cbGender.Size = new System.Drawing.Size(219, 29);
             this.cbGender.TabIndex = 5;
@@ -189,7 +189,7 @@
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtFirstName.Location = new System.Drawing.Point(249, 87);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(219, 29);
             this.txtFirstName.TabIndex = 3;
@@ -199,7 +199,7 @@
             // 
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtLastName.Location = new System.Drawing.Point(249, 41);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(4);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(219, 29);
             this.txtLastName.TabIndex = 2;
@@ -235,9 +235,9 @@
             this.gbContact.Controls.Add(this.lblPhoneNumber);
             this.gbContact.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gbContact.Location = new System.Drawing.Point(36, 441);
-            this.gbContact.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbContact.Margin = new System.Windows.Forms.Padding(4);
             this.gbContact.Name = "gbContact";
-            this.gbContact.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbContact.Padding = new System.Windows.Forms.Padding(4);
             this.gbContact.Size = new System.Drawing.Size(516, 149);
             this.gbContact.TabIndex = 3;
             this.gbContact.TabStop = false;
@@ -247,7 +247,7 @@
             // 
             this.txtEmailAddress.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtEmailAddress.Location = new System.Drawing.Point(249, 87);
-            this.txtEmailAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmailAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmailAddress.Name = "txtEmailAddress";
             this.txtEmailAddress.Size = new System.Drawing.Size(219, 32);
             this.txtEmailAddress.TabIndex = 3;
@@ -267,7 +267,7 @@
             // 
             this.txtPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtPhoneNumber.Location = new System.Drawing.Point(249, 41);
-            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(219, 29);
             this.txtPhoneNumber.TabIndex = 1;
@@ -293,9 +293,9 @@
             this.gbIdentityCard.Controls.Add(this.lblIdentityCardNumber);
             this.gbIdentityCard.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gbIdentityCard.Location = new System.Drawing.Point(596, 137);
-            this.gbIdentityCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbIdentityCard.Margin = new System.Windows.Forms.Padding(4);
             this.gbIdentityCard.Name = "gbIdentityCard";
-            this.gbIdentityCard.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbIdentityCard.Padding = new System.Windows.Forms.Padding(4);
             this.gbIdentityCard.Size = new System.Drawing.Size(497, 194);
             this.gbIdentityCard.TabIndex = 4;
             this.gbIdentityCard.TabStop = false;
@@ -307,7 +307,7 @@
             this.dtpExpirationDateIdentityCard.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpExpirationDateIdentityCard.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpExpirationDateIdentityCard.Location = new System.Drawing.Point(249, 135);
-            this.dtpExpirationDateIdentityCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpExpirationDateIdentityCard.Margin = new System.Windows.Forms.Padding(4);
             this.dtpExpirationDateIdentityCard.Name = "dtpExpirationDateIdentityCard";
             this.dtpExpirationDateIdentityCard.Size = new System.Drawing.Size(219, 32);
             this.dtpExpirationDateIdentityCard.TabIndex = 5;
@@ -330,7 +330,7 @@
             this.dtpIssueDateIdentityCard.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dtpIssueDateIdentityCard.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpIssueDateIdentityCard.Location = new System.Drawing.Point(249, 87);
-            this.dtpIssueDateIdentityCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpIssueDateIdentityCard.Margin = new System.Windows.Forms.Padding(4);
             this.dtpIssueDateIdentityCard.Name = "dtpIssueDateIdentityCard";
             this.dtpIssueDateIdentityCard.Size = new System.Drawing.Size(219, 32);
             this.dtpIssueDateIdentityCard.TabIndex = 3;
@@ -351,7 +351,7 @@
             // 
             this.txtIdentityCardNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtIdentityCardNumber.Location = new System.Drawing.Point(249, 41);
-            this.txtIdentityCardNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdentityCardNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdentityCardNumber.Name = "txtIdentityCardNumber";
             this.txtIdentityCardNumber.Size = new System.Drawing.Size(219, 29);
             this.txtIdentityCardNumber.TabIndex = 1;
@@ -377,9 +377,9 @@
             this.gbPassport.Controls.Add(this.lblPassportNumber);
             this.gbPassport.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gbPassport.Location = new System.Drawing.Point(596, 395);
-            this.gbPassport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbPassport.Margin = new System.Windows.Forms.Padding(4);
             this.gbPassport.Name = "gbPassport";
-            this.gbPassport.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbPassport.Padding = new System.Windows.Forms.Padding(4);
             this.gbPassport.Size = new System.Drawing.Size(497, 194);
             this.gbPassport.TabIndex = 5;
             this.gbPassport.TabStop = false;
@@ -391,7 +391,7 @@
             this.dtpExpirationDatePassport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpExpirationDatePassport.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpExpirationDatePassport.Location = new System.Drawing.Point(249, 135);
-            this.dtpExpirationDatePassport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpExpirationDatePassport.Margin = new System.Windows.Forms.Padding(4);
             this.dtpExpirationDatePassport.Name = "dtpExpirationDatePassport";
             this.dtpExpirationDatePassport.Size = new System.Drawing.Size(219, 32);
             this.dtpExpirationDatePassport.TabIndex = 5;
@@ -414,7 +414,7 @@
             this.dtpIssueDatePassport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dtpIssueDatePassport.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpIssueDatePassport.Location = new System.Drawing.Point(249, 87);
-            this.dtpIssueDatePassport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpIssueDatePassport.Margin = new System.Windows.Forms.Padding(4);
             this.dtpIssueDatePassport.Name = "dtpIssueDatePassport";
             this.dtpIssueDatePassport.Size = new System.Drawing.Size(219, 32);
             this.dtpIssueDatePassport.TabIndex = 3;
@@ -435,7 +435,7 @@
             // 
             this.txtPassportNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtPassportNumber.Location = new System.Drawing.Point(249, 41);
-            this.txtPassportNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassportNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassportNumber.Name = "txtPassportNumber";
             this.txtPassportNumber.Size = new System.Drawing.Size(219, 29);
             this.txtPassportNumber.TabIndex = 1;
@@ -458,7 +458,7 @@
             this.btnCancel.Image = global::SystemHR.UserInterface.Properties.Resources.cancel_32;
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancel.Location = new System.Drawing.Point(924, 606);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(169, 60);
             this.btnCancel.TabIndex = 7;
@@ -474,7 +474,7 @@
             this.btnSave.Image = global::SystemHR.UserInterface.Properties.Resources.save_32;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(747, 606);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(169, 60);
             this.btnSave.TabIndex = 6;
@@ -487,7 +487,7 @@
             // 
             this.pbEmployee.Image = global::SystemHR.UserInterface.Properties.Resources.employee_64;
             this.pbEmployee.Location = new System.Drawing.Point(980, 18);
-            this.pbEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.pbEmployee.Name = "pbEmployee";
             this.pbEmployee.Size = new System.Drawing.Size(64, 64);
             this.pbEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

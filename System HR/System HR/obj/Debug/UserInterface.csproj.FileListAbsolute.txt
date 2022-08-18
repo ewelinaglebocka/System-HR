@@ -36,3 +36,4 @@ C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\
 C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.Base.BaseForm.resources
 C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.EmployeeAddForm.resources
 C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.EmployeesForm.resources
+C:\Users\eweli\Documents\Programing_lovers\C#\System-HR\System HR\System HR\obj\Debug\SystemHR.UserInterface.Forms.Employees.Base.EmployeeEditForm.resources

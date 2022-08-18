@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using SystemHR.DataAccessLayer.Models;
 using SystemHR.DataAccessLayer.Models.Dictionaries;
 using SystemHR.DataAccessLayer.ViewModel;
 using SystemHR.UserInterface.Classes;
+using SystemHR.UserInterface.Forms.Employees.Base;
 using SystemHR.UserInterface.Helpers;
 
 namespace SystemHR.UserInterface.Forms.Employees
@@ -145,6 +142,25 @@ namespace SystemHR.UserInterface.Forms.Employees
 
         #endregion
 
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+            int employeeId = Convert.ToInt32(dgvEmployees.CurrentRow.Cells["colId"].Value);
+            int selectedRowIndex = dgvEmployees.CurrentRow.Index;
+
+            EmployeeEditForm frm = new EmployeeEditForm(employeeId);
+            frm.ReloadEmployees += (s, ea) =>
+            {
+                EmployeeEventArgs eventArgs = ea as EmployeeEventArgs;
+                if (eventArgs != null)
+                {
+                    EmployeeViewModel employee =
+                        MappingHelper.MapEmpoyeeModelToEmployeeViewMode(eventArgs.Employee);
+                    bsEmployees[selectedRowIndex] = employee;
+                }
+            };
+
+            frm.ShowDialog();
+        }
     }
 
 }
