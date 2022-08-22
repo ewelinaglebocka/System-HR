@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystemHR.DataAccessLayer;
 using SystemHR.UserInterface.Forms;
 
 namespace System_HR
@@ -17,6 +18,8 @@ namespace System_HR
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            GlobalConfig.InitializeConnection(GlobalConfig.CnnType);
             Application.Run(new MainForm());
         }
     }

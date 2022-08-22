@@ -1,8 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystemHR.DataAccessLayer;
 using SystemHR.DataAccessLayer.Models;
 using SystemHR.DataAccessLayer.Models.Dictionaries;
 using SystemHR.DataAccessLayer.ViewModel;
@@ -12,13 +17,16 @@ using SystemHR.UserInterface.Helpers;
 
 namespace SystemHR.UserInterface.Forms.Employees
 {
-    public partial class EmployeesForm : Form
+    public partial class EmployeesForm : BaseForm
     {
         #region Fields
+
         private static EmployeesForm _instance = null;
-        private static IList<EmployeeViewModel> fakeEmloyees;
+        private static IList<EmployeeViewModel> fakeEmployees;
+
         #endregion
         #region Properties
+
         public static EmployeesForm Instance
         {
             get
@@ -42,21 +50,25 @@ namespace SystemHR.UserInterface.Forms.Employees
                 return false;
             }
         }
+
         #endregion
         #region Constructor
+
         private EmployeesForm()
         {
             InitializeComponent();
-            fakeEmloyees = GetFakeEmployees();
-            PrepareEmploeesData();
+            IEnumerable<EmployeeModel> employees = GlobalConfig.Connection.GetEmployees();
+            fakeEmployees = MappingHelper.MapEmployeeModelToEmployeeViewModel(employees);
+            PrepareEmployeesData();
         }
 
         #endregion
         #region Private Methods
-        private void PrepareEmploeesData()
+
+        private void PrepareEmployeesData()
         {
-            var fakeEmloyeesSorted = fakeEmloyees.OrderBy(x => x.Code).ToList();
-            bsEmployees.DataSource = new BindingList<EmployeeViewModel>(fakeEmloyeesSorted);
+            var fakeEmployeesSorted = fakeEmployees.OrderBy(x => x.Code).ToList();
+            bsEmployees.DataSource = new BindingList<EmployeeViewModel>(fakeEmployeesSorted);
             dgvEmployees.DataSource = bsEmployees;
         }
 
@@ -66,9 +78,9 @@ namespace SystemHR.UserInterface.Forms.Employees
             {
                 new EmployeeModel()
                 {
-                    Id= 1,
-                    LastName="Andrzejewski",
-                    FirstName="Paweł",
+                    Id = 1,
+                    LastName = "Andrzejewski",
+                    FirstName = "Paweł",
                     Code = 1,
                     Gender = new GenderModel("mężczyzna"),
                     DateBirth = new DateTime(1994,9,1),
@@ -76,13 +88,14 @@ namespace SystemHR.UserInterface.Forms.Employees
                     PhoneNumber = "665988254",
                     EmailAddress = "p.andrzejewski@gmail.com",
                     IdentityCardNumber = "AWR204120",
-                    IssueDateIdentityCard = new DateTime (2012,9,15),
-                    ExpirationDateIdentityCard = new DateTime (2032,9,15),
+                    IssueDateIdentityCard = new DateTime(2012,9,15),
+                    ExpirationDateIdentityCard = new DateTime(2032,9,15),
                     PassportNumber = "ER8984510",
                     IssueDatePassport = new DateTime(2015,5,23),
                     ExpirationDatePassport = new DateTime(2025,5,23),
                     Status = new StatusModel("Wprowadzony")
                 },
+
                  new EmployeeModel()
                 {
                     Id = 2,
@@ -111,25 +124,23 @@ namespace SystemHR.UserInterface.Forms.Employees
                     Status = new StatusModel("Wprowadzony")
                 }
             };
-            return MappingHelper.MapEmpoyeeModelToEmployeeViewModel(fakeEmployeesModel);
+
+            return MappingHelper.MapEmployeeModelToEmployeeViewModel(fakeEmployeesModel);
         }
+
         #endregion
         #region Events
-        private void EmployeesForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            _instance = null;
-        }
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
             EmployeeAddForm frm = new EmployeeAddForm();
             frm.ReloadEmployees += (s, ea) =>
             {
-                EmployeeEventArgs eventArgs = ea as EmployeeEventArgs;
-                if (eventArgs != null)
+                EmployeeEventArgs evetArgs = ea as EmployeeEventArgs;
+                if (evetArgs != null)
                 {
-                    EmployeeViewModel employee =
-                        MappingHelper.MapEmpoyeeModelToEmployeeViewMode(eventArgs.Employee);
+                    EmployeeViewModel employee
+                        = MappingHelper.MapEmployeeModelToEmployeeViewModel(evetArgs.Employee);
                     bsEmployees.Add(employee);
 
                     dgvEmployees.ClearSelection();
@@ -137,6 +148,7 @@ namespace SystemHR.UserInterface.Forms.Employees
                 }
             };
             frm.ShowDialog();
+
         }
 
         private void btnModify_Click(object sender, EventArgs e)
@@ -147,15 +159,14 @@ namespace SystemHR.UserInterface.Forms.Employees
             EmployeeEditForm frm = new EmployeeEditForm(employeeId);
             frm.ReloadEmployees += (s, ea) =>
             {
-                EmployeeEventArgs eventArgs = ea as EmployeeEventArgs;
-                if (eventArgs != null)
+                EmployeeEventArgs evetArgs = ea as EmployeeEventArgs;
+                if (evetArgs != null)
                 {
-                    EmployeeViewModel employee =
-                        MappingHelper.MapEmpoyeeModelToEmployeeViewMode(eventArgs.Employee);
+                    EmployeeViewModel employee
+                        = MappingHelper.MapEmployeeModelToEmployeeViewModel(evetArgs.Employee);
                     bsEmployees[selectedRowIndex] = employee;
                 }
             };
-
             frm.ShowDialog();
         }
 
@@ -164,9 +175,9 @@ namespace SystemHR.UserInterface.Forms.Employees
             int employeeId = Convert.ToInt32(dgvEmployees.CurrentRow.Cells["colId"].Value);
             int selectedRowIndex = dgvEmployees.CurrentRow.Index;
 
-            // RemoveEmployee(employId);
+            // RemoveEmployee(employeeId);
 
-            EmployeeViewModel employee = fakeEmloyees.Where(x => x.Id == employeeId).FirstOrDefault();
+            EmployeeViewModel employee = fakeEmployees.Where(x => x.Id == employeeId).FirstOrDefault();
             if (employee != null)
             {
                 bsEmployees.Remove(employee);
@@ -179,6 +190,12 @@ namespace SystemHR.UserInterface.Forms.Employees
 
             }
         }
+
+        private void EmployeesForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _instance = null;
+        }
+
         #endregion
     }
 }
