@@ -9,6 +9,18 @@ namespace SystemHR.UserInterface.Extensions
 {
     public static class ExtensionsMethods
     {
+        public static void SetDateTimePikerValue(this DateTimePicker dtp, DateTime? dt)
+        {
+            if (dt.HasValue)
+            {
+                dtp.Format = DateTimePickerFormat.Short;
+                dtp.Value = dt.Value;
+            }
+            else
+            {
+                dtp.Format = DateTimePickerFormat.Custom;
+            }
+        }
         public static void DateTimePickerValueChanged(this DateTimePicker dtp)
         {
             dtp.Format = DateTimePickerFormat.Short;

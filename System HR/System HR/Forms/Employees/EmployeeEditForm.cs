@@ -38,16 +38,16 @@ namespace SystemHR.UserInterface.Forms.Employees.Base
             txtLastName.Text = employee.LastName;
             txtFirstName.Text = employee.FirstName;
             cbGender.Text = employee.Gender != null ? employee.Gender.Value : null;
-            dtpDateBirth.Value = employee.DateBirth.Value;
+            dtpDateBirth.SetDateTimePikerValue(employee.DateBirth.Value);
             txtPesel.Text = employee.PESEL;
             txtPhoneNumber.Text = employee.PhoneNumber;
             txtEmailAddress.Text = employee.EmailAddress;
             txtIdentityCardNumber.Text = employee.IdentityCardNumber;
-            dtpIssueDateIdentityCard.Value = employee.IssueDateIdentityCard.Value;
-            dtpExpirationDateIdentityCard.Value = employee.ExpirationDateIdentityCard.Value;
+            dtpIssueDateIdentityCard.SetDateTimePikerValue(employee.IssueDateIdentityCard);
+            dtpExpirationDateIdentityCard.SetDateTimePikerValue(employee.ExpirationDateIdentityCard);
             txtPassportNumber.Text = employee.PassportNumber;
-            dtpIssueDatePassport.Value = employee.IssueDatePassport.Value;
-            dtpExpirationDatePassport.Value = employee.ExpirationDatePassport.Value;
+            dtpIssueDatePassport.SetDateTimePikerValue(employee.IssueDatePassport);
+            dtpExpirationDatePassport.SetDateTimePikerValue(employee.ExpirationDatePassport);
 
             lblEmployee.Text = $"{employee.FirstName} {employee.LastName} ({employee.Code.ToString().PadLeft(4,'0')}) - {employee.Status.ToString()}";
 
@@ -69,7 +69,7 @@ namespace SystemHR.UserInterface.Forms.Employees.Base
                     Code = 1,
                     Gender = new GenderModel("mężczyzna"),
                     DateBirth = new DateTime(1994,9,1),
-                    PESEL = "94090142830",
+                    PESEL = "94090142832",
                     PhoneNumber = "665988254",
                     EmailAddress = "p.andrzejewski@gmail.com",
                     IdentityCardNumber = "AWR204120",
@@ -131,7 +131,17 @@ namespace SystemHR.UserInterface.Forms.Employees.Base
             {
                 epFirstName.Clear();
             }
+
+            if (!string.IsNullOrEmpty(txtPesel.Text) && !ValidatorHelper.IsValidPESEL(txtPesel.Text))
+            {
+                epPESEL.SetError(txtPesel, "Cyfra kontrolna numeru pesel jest nieprawidlowa.");
+            }
+            else
+            {
+                epPESEL.Clear();
+            }
         }
+
 
         private void InitializeData()
         {
@@ -222,12 +232,20 @@ namespace SystemHR.UserInterface.Forms.Employees.Base
 
         private void txtPesel_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
         private void txtPesel_Validated(object sender, EventArgs e)
         {
-
+            string pesel = txtPesel.Text;
+            if (!string.IsNullOrEmpty(pesel) && !ValidatorHelper.IsValidPESEL(pesel))
+            {
+                epPESEL.SetError(txtPesel, "Cyfra kontrolna numeru pesel jest nieprawidlowa.");
+            }
+            else
+            {
+                epPESEL.Clear();
+            }
         }
 
         #endregion
